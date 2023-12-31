@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-cicd-app
-          image: raghugrinindia/spring-boot-cicd-pipeline:1.0.0-28
+          image: raghugrinindia/spring-boot-cicd-pipeline:1.0.0-29
           resources:
             limits:
               memory: "256Mi"
