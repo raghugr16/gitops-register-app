@@ -17,7 +17,7 @@ spec:
           image: raghugrinindia/spring-boot-cicd-pipeline:1.0.0-19
           resources:
             limits:
-              memory: "500Mi"
+              memory: "2500Mi"
               cpu: "500m"
           ports:
             - containerPort: 8080
