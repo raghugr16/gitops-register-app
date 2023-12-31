@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-cicd-pipeline-deployment
+  name: spring-boot-cicd-pipeline:1.0.0-27
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: spring-boot-cicd-pipeline-app
+      app: spring-boot-cicd-pipeline:1.0.0-27
   template:
     metadata:
       labels:
-        app: spring-boot-cicd-pipeline-app
+        app: spring-boot-cicd-pipeline:1.0.0-27
     spec:
       containers:
-        - name: spring-boot-cicd-pipeline-app
-          image: raghugrinindia/spring-boot-cicd-pipeline:1.0.0-26
+        - name: spring-boot-cicd-pipeline:1.0.0-27
+          image: raghugrinindia/spring-boot-cicd-pipeline:1.0.0-27
           resources:
             limits:
               memory: "256Mi"
