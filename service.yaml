@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: spring-boot-cicd-pipeline-service
   labels:
-    app: spring-boot-cicd-pipeline
+    app: spring-boot-cicd-pipeline-app
 spec:
   selector:
-    app: spring-boot-cicd-pipeline
+    app: spring-boot-cicd-pipeline-app
 
   ports:
     - port: 8080
